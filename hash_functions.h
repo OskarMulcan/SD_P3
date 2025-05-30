@@ -15,7 +15,7 @@ struct AdditiveHash {
 struct MultiplicativeHash {
     size_t operator()(const std::string& key, size_t capacity) const {
         const double A = 0.6180339887;
-        double frac;
+        double frac = 0;
         for (char c : key){
             frac += fmod(c*A, 1.0);
         }

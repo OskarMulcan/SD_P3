@@ -5,6 +5,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
+#include <chrono>
 #define NUM_TESTS 100
 
 using namespace std;
